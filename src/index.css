@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin:0;
+    padding:0;
+}
+
+body {
+    background-color: rgb(243,243,243);
+}
+
+.nav-menu {
+    transition: max-height 0.3s ease-in;
+    overflow: hidden;
+    max-height: 0;
+  }
+  
+  .nav-menu.open {
+    max-height: 1000px; /* Set a value large enough to show the entire menu */
+  }
